@@ -1,8 +1,9 @@
+// onmouseover="image1.src='images/image1_2.jpg'" onmouseout="image1.src='images/image1.jpg'"
 
-function button(){
-  var first = Number(document.getElementById("firstNumber").value);
-  var second = Number(document.getElementById("secondNumber").value);
-  var total = Number(first / second);
-  document.getElementById("total").value = total;
-  alert("total : " + total);
-}
+image1.addEventListener("mouseover",function(){
+  image1.src='images/image1_2.jpg';
+});
+
+image1.addEventListener("mouseout", function(){
+  image1.src='images/image1.jpg';
+});
